@@ -1,0 +1,28 @@
+
+name: 🐛 Bug Report
+description: Let us know about problem
+body:
+  - type: markdown
+    attributes:
+      value: |
+        > ⚠️ DON'T CREATE SECURITY ISSUE here, use [this form](https://www.yiiframework.com/security) instead.
+  - type: textarea
+    id: description
+    attributes:
+      label: Description
+      description:
+        Provide a detailed description of the issue. Include all relevant information to help us understand and reproduce the problem.
+    validations:
+      required: true
+  - type: input
+    id: package-version
+    attributes:
+      label: Package version
+      description: Specify the exact package version you're using
+      placeholder: "1.0.3"
+  - type: input
+    id: php-version
+    attributes:
+      label: PHP version
+      description: Specify the exact PHP version you're using (run `php -v` to check)
+      placeholder: "8.5.0"
